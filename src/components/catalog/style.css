@@ -4,11 +4,13 @@ body {
 }
 
 .catalog ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   gap: 20px;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
 }
 
 .catalog li {
@@ -17,11 +19,18 @@ body {
   align-items: center;
   justify-content: center;
   list-style: none;
-  width: 250px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 1s;
+}
+
+.catalog li:hover {
+  box-shadow: 2px 2px 5px #ffffff;
 }
 
 .poster img {
-  width: 200px;
+  width: 150px;
 }
 
 .unavailable {
@@ -31,4 +40,40 @@ body {
   justify-content: center;
   background-color: #737373;
   height: 293.33px;
+}
+
+.rating {
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
+
+.genre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.select-genre {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.movie-card {
+  display: flex;
+  gap: 20px;
 }

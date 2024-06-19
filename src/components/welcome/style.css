@@ -1,0 +1,34 @@
+.welcome {
+  margin-top: 80px;
+  background: url(https://img.freepik.com/free-photo/rows-red-seats-theater_53876-64710.jpg?t=st=1718799734~exp=1718803334~hmac=cf3bfa0ced15097ec0d3605683fb206dc0e9634105159592dc771c7914e2846b&w=1380);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.trial-logo img {
+  width: 150px;
+  left: 25%;
+}
+
+.trial-text {
+  text-align: left;
+  max-width: 60%;
+}
+
+.trial-text h1 {
+  font-size: 40px;
+}
+
+.trial-text h2 {
+  font-size: 25px;
+  color: rgb(255, 225, 0);
+}

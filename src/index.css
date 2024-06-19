@@ -1,7 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-
+  background: linear-gradient(#1b2a3b, #000000);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #ffffff;
 }
 
 code {
@@ -10,14 +14,25 @@ code {
 }
 
 .wrapper {
-  width: 90%;
+  width: 1440px;
   margin: 0 auto;
   padding: 100px 0 0 0;
+  /* background: linear-gradient(#283d57, #1b2a3b); */
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #ffffff;
 }
 
 button {
   padding: 10px;
-  background: #42699c;
+  background: linear-gradient(#42699c, #29405f);
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;

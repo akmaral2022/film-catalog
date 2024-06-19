@@ -1,6 +1,7 @@
 import "./style.css"
 import Camera from "../../assets/icons/camera.png"
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [menuState, setMenuState] = useState<boolean>(false);
@@ -19,11 +20,10 @@ export const Header = () => {
           <div className="header__burger" onClick={handleMenuBurger}>
             <span></span>
           </div>
-          <div className={`menu ${menuState ? 'menu--open' : ''}`}>
+          <div className={`menu ${menuState ? 'menu--open' : 'menu--closed'}`}>
             <ul>
-              <li>Главная</li>
-              <li>Все фильмы</li>
-              <li>Избранные</li>
+              <li><Link to='/'>Все фильмы</Link></li>
+              <li><Link to='/selected-films'>Избранные</Link></li>
             </ul>
           </div>
         </div>
